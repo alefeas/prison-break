@@ -104,7 +104,7 @@ main {
 }
 
 .hero-section {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(51, 46, 37, 0.9)), url('../img/michael-scofield-season-5.webp') no-repeat center center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(51, 46, 37, 0.9)), url('img/michael-scofield-season-5.webp') no-repeat center center;
     background-size: cover;
     padding: 120px 0;
     margin-bottom: 3rem;
