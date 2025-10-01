@@ -1,0 +1,216 @@
+/* Estilos para el formulario de contacto */
+.contact-form-section {
+    background: rgba(42, 36, 31, 0.6);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(140, 120, 83, 0.3);
+    margin-bottom: 3rem;
+}
+
+.contact-form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-title {
+    color: #8C7853;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contact-desc {
+    color: #BEBDB8;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-label {
+    color: #EAE0D5;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#contactForm .form-control {
+    background-color: #332E25;
+    color: #EAE0D5;
+    border: 1px solid #8C7853;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+#contactForm .form-control:focus {
+    background-color: #3D352A;
+    color: #EAE0D5;
+    border-color: #8C7853;
+    box-shadow: 0 0 0 0.2rem rgba(140, 120, 83, 0.25);
+    transform: translateY(-1px);
+}
+
+#contactForm .form-control::placeholder {
+    color: #8a8a8a;
+}
+
+.form-text {
+    color: #F5F0E8;
+    font-size: 0.875rem;
+}
+
+#charCount {
+    font-weight: bold;
+    color: #EAE0D5;
+}
+
+.contact-submit-btn {
+    background: linear-gradient(45deg, #8C7853, #736344);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(140, 120, 83, 0.4);
+    background: linear-gradient(45deg, #736344, #8C7853);
+}
+
+/* Estilos para la sección de ubicación */
+.location-section {
+    background: rgba(42, 36, 31, 0.6);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(140, 120, 83, 0.3);
+}
+
+.location-info {
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-title {
+    color: #8C7853;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.detail-item i {
+    color: #8C7853;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.detail-item h6 {
+    color: #EAE0D5;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.detail-item p {
+    color: #BEBDB8;
+    margin: 0;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.map-container {
+    border-radius: 0;
+    overflow: hidden;
+    height: 100%;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(20%) contrast(1.1);
+    transition: filter 0.3s ease;
+    display: block;
+}
+
+.map-container:hover iframe {
+    filter: grayscale(0%) contrast(1.2);
+}
+
+@media (max-width: 991.98px) {
+    .contact-form-section,
+    .location-section {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .location-section .row {
+        flex-direction: column-reverse;
+    }
+    
+    .location-info {
+        padding: 2rem;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .location-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .location-details {
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form-section,
+    .location-section {
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+    
+    .contact-title {
+        font-size: 1.5rem;
+    }
+    
+    .location-title {
+        font-size: 1.2rem;
+    }
+    
+    .map-container {
+        height: 250px;
+    }
+}

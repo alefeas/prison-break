@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prisonbreak-fansite.com/sitemap.xml
+
+# Optimized for Prison Break fan site
+# Allow all search engines to crawl the site
